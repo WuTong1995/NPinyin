@@ -10,6 +10,9 @@ namespace NPinyin
     /// </summary>
     public class PinyinOption
     {
+        /// <summary>
+        /// 拼音风格
+        /// </summary>
         public PinyinStyle Style { get; set; } = PinyinStyle.Normal;
 
         /// <summary>

@@ -7,6 +7,9 @@ namespace NPinyin
 {
     public class Pinyin
     {
+        /// <summary>
+        /// 配置项
+        /// </summary>
         private PinyinOption option;
 
         /// <summary>
@@ -180,6 +183,12 @@ namespace NPinyin
             return firstCode;
         }
 
+        /// <summary>
+        /// 字符串转16进制
+        /// </summary>
+        /// <param name="str">字符串</param>
+        /// <param name="encode">编码方式</param>
+        /// <returns></returns>
         private int StringToHex(string str, Encoding encode)
         {
             var byteArr = encode.GetBytes(str);
